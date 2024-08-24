@@ -1,0 +1,649 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#spic_messages {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #849878;
+  padding: 10px;
+}
+.spic_messages_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 700;
+  color: #454545;
+}
+
+.message_icon {
+  background-color: #245606;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+}
+.phone_number {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 700;
+  color: #454545;
+}
+
+.top_run_message {
+  color: white;
+  font-weight: 700;
+}
+
+#navbar {
+  background: url("https://t3.ftcdn.net/jpg/07/49/97/08/360_F_749970865_EOqBxs5ClFUDJ3ioDLU8YJ25McsccH7o.jpg");
+  background-size: cover;
+  height: 120vh;
+}
+
+.navbar {
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading {
+  font-family: "Times New Roman", Times, serif;
+}
+
+strong {
+  color: #7a3900;
+  font-family: "Times New Roman", Times, serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  font-weight: 700;
+  position: relative;
+}
+
+nav a:hover {
+  color: #7a3900;
+}
+nav a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #7a3900;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav a:hover::after {
+  width: 100%;
+}
+
+.navbar_all {
+  margin-right: 20px;
+  font-size: 26px;
+  color: #2c2c2c;
+  cursor: pointer;
+}
+
+.nav_cen_heading {
+  text-align: center;
+  margin: 60px 60px 150px 60px;
+}
+
+.nav_cen_heading h1 {
+  font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
+  color: #3d3c3c;
+}
+
+.nav_cen_heading p {
+  color: #5b5757;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: cursive;
+}
+
+.nav_btn {
+  background-color: #9dd006;
+  padding: 14px 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  border: 1px solid #9dd006;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#typeOfskincare {
+  padding: 60px 80px;
+}
+
+#typeOfskincare h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 44px;
+  margin-bottom: 40px;
+  color: #245606;
+}
+.all_skincare_type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  transition: all 0.1s;
+  padding: 30px;
+}
+.product_image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.skincare_type a {
+  text-decoration: none;
+  margin-left: 30px;
+
+  cursor: pointer;
+  color: #245606;
+  font-weight: 700;
+  font-family: cursive;
+}
+
+.wall_1 {
+  margin-top: -600px;
+  width: 250px;
+  margin-left: 80px;
+}
+
+.wall_2 {
+  margin-top: -600px;
+  width: 350px;
+  margin-left: 900px;
+}
+/* ///////////////////////////// */
+
+/* #popular {
+  padding: 80px;
+}
+
+.popular_heading {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.popular_heading h1 {
+  color: #245606;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.popular_heading a {
+  text-decoration: none;
+  color: black;
+  background-color: #9dd006;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.product_items {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.product_details {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #0b7285;
+}
+.images_p_color {
+  background-color: #0b7285;
+  border-radius: 5px;
+  padding: 10px;
+}
+.product_images {
+  /* width: 100px; */
+/* height: 200px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 0px 20px 85px;
+}
+
+.product_name {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.product_price {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.new {
+  background-color: white;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sale {
+  background-color: #dddddd;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  color: green;
+}
+
+.new_sale {
+  display: flex;
+  gap: 10px;
+}
+
+.add_wish {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.addToBag {
+  background-color: #ff3e6c;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #ff3e6c;
+}
+
+.addToBag:hover {
+  background-color: #b82f4f;
+  border: 1px solid #b82f4f;
+}
+
+.wishlist {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.wishlist:hover {
+  background-color: #ff3e6c;
+  border: 1px solid #ff3e6c;
+  color: white;
+} */
+
+/* ////////////////////////// */
+
+#uses {
+  padding: 80px;
+  display: flex;
+  gap: 40px;
+}
+
+.uses_image img {
+  width: 500px;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+.uses_details {
+  padding: 40px 30px 30px 30px;
+}
+
+.uses_details h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  color: #245606;
+}
+
+.uses_details h4 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+.uses_details p {
+  font-size: 10px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  font-family: cursive;
+  color: #7b7b7b;
+}
+
+/* //////////////////////////// */
+/* .full_images {
+  width: 100%;
+  height: 140vh;
+  margin-bottom: 40px;
+} */
+
+#full_image {
+  background: url("./img/woman-6468147_1280.jpg");
+  width: 100%;
+  height: 140vh;
+}
+
+.line {
+  background-color: white;
+  width: 2px;
+  height: 135vh;
+  margin-left: 640px;
+}
+
+.icons_image {
+  color: white;
+  text-align: center;
+}
+
+.icon_img {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: -450px;
+  /* background-color: white; */
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.icon_img:hover {
+  background-color: #ddd;
+  color: black;
+  border: 1px solid #ddd;
+}
+/* //////////////////////////// */
+
+#single_product {
+  padding: 60px 120px;
+  display: flex;
+  gap: 40px;
+}
+
+.product_1 {
+  background-color: #ffd8a8;
+  height: 600px;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+
+.product_1_image {
+  width: 400px;
+  height: 450px;
+}
+
+.product_2_image {
+  width: 500px;
+  height: 700px;
+}
+
+#single_product h1 {
+  margin-right: -220px;
+  color: #245606;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+}
+
+.single_product_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.single_product_details p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.single_product_details h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.top_arrow {
+  background-color: #9dd006;
+  padding: 16px;
+  color: white;
+  font-size: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.product_2_image {
+  border-radius: 20px;
+}
+
+/* ///////////////////////////////// */
+/* testimonials */
+
+#testimonials {
+  padding: 40px 0px;
+  margin: 80px 0px;
+  background-color: #f4fce3;
+}
+
+#testimonials h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #245606;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.clients_text {
+  display: flex;
+  gap: 30px;
+}
+
+.client_testimonials {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.rating_icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.icons_rat {
+  color: green;
+}
+
+.rating_icons p {
+  color: #7b7b7b;
+  font-weight: 700;
+}
+
+.client_para {
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.5;
+  color: #7b7b7b;
+}
+
+.client_name {
+  font-family: cursive;
+  font-weight: 600;
+  margin-top: 10px;
+  color: chocolate;
+}
+
+.client_image {
+  width: 140px;
+  height: 180px;
+  border-radius: 10px;
+}
+/* /////////////////////////////////// */
+/* //////////////////////////////////// */
+/* /////////////////////////////////// */
+
+.all_details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 80px 100px;
+  background-color: black;
+  color: white;
+  gap: 10px;
+}
+
+/* box-1 */
+
+.skincare_address h1 {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.big_para_skincare {
+  font-size: 12px;
+  line-height: 1.5;
+  /* font-family: cursive; */
+  color: #a4a4a4;
+}
+
+/* box-2 */
+.all_cat_links {
+  padding: 20px;
+}
+.sp_links {
+  margin-left: 80px;
+}
+
+.all_cat_links h2 {
+  /* color: #9b9b9b; */
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.cat_links a {
+  display: flex;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #7b7b7b;
+  font-size: 14px;
+}
+
+.cat_links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.payment_methods {
+  padding: 20px;
+  margin-left: -100px;
+}
+.payment_methods h2 {
+  /* color: #9b9b9b; */
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.payment_meth a {
+  display: flex;
+  /* text-decoration: none; */
+  margin-bottom: 10px;
+  color: #7b7b7b;
+  font-size: 14px;
+}
+
+.payment_meth a:hover {
+  color: white;
+}
+
+.small_para_skincare {
+  font-size: 10px;
+  font-family: cursive;
+  margin-bottom: 20px;
+  color: #a76d03;
+  margin-top: -20px;
+}
+
+.background_heading {
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #222;
+  margin-top: -80px;
+  padding: 0px 80px;
+  background-color: black;
+}
+
+footer {
+  padding: 20px 160px 40px 80px;
+  background-color: black;
+  color: #7b7b7b;
+}
+.footer {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span {
+  color: #be5a03;
+  font-family: cursive;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.copy_right_para {
+  font-size: 14px;
+}
+
+.copy_right_icons p {
+  font-size: 12px;
+}
+
+.copy_right_icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.copy_icon {
+  background-color: #333;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.copy_icon:hover {
+  background-color: whitesmoke;
+}
+
+/* //////////// */
